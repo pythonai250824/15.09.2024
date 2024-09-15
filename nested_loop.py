@@ -30,9 +30,13 @@ import random
 # * * * *
 
 #4
-# *
-# * *
-# * * *
-# * * * *
+#i=1 *
+#i=2 * *
+#i=3 * * *
+#i=4 * * * *
+for i in range(1, 4 + 1):
+    #print('* ' * i)
+    for _ in range(1, i + 1):
+        print('*', end = " ")
 
 
