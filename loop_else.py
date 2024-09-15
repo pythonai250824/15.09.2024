@@ -1,64 +1,63 @@
-#
-# PIE: float = 3.14  # const
-# tries = 1
-# user_attempt: float = float(input('what is pie?'))
-# while user_attempt != PIE:
-#     # 1
-#     print('wrong ...')
-#     tries += 1
-#     if tries > 3:
-#         print('you were wrong too many times!! goodbye...')
-#         break
-#     user_attempt = float(input('try again, what is pie?'))
-# else:
-#     # 2
-#     # break did NOT happend
-#     print(f'correct, pie is {PIE}')
-#
-# # the lucky number is 777
-# # input number from the user until the user guessed the number
-# # count how many times the user tried
-# # if the user gave the number 0 break
-# # if the user guessed correctly , print "well done! , {tries}..."
-#
-# ########## no input before
-# LUCKY_NUMBER: int = 777
-# x: int = 0
-# attempts: int = 0
-# while x != LUCKY_NUMBER:
-#     attempts += 1
-#     x = int(input('guess a number'))
-#     if x == 0:
-#         break
-# else:
-# #if x == 777:
-#     # he guessed 777
-#     print(f"good guess. attempts = {attempts}")
-#
-# ########### input before
-# LUCKY_NUMBER: int = 777
-# x: int = int(input('guess a number'))
-# attempts: int = 1
-# while x != LUCKY_NUMBER:
-#     # 1
-#     if x == 0:
-#         break
-#     attempts += 1
-#     x = int(input('wrong. guess again'))
-# else:
-#     # 2
-#     #if x == 777:
-#     # he guessed 777
-#     print(f"good guess. attempts = {attempts}")
-#
-# while True:
-#     #x
-#     #y
-#     #z
-#     #avg
-#     #if 0 <= x <= 10 ....
-#         #break
-#     pass
+
+PIE: float = 3.14  # const
+tries = 1
+user_attempt: float = float(input('what is pie?'))
+while user_attempt != PIE:
+    # 1
+    print('wrong ...')
+    tries += 1
+    if tries > 3:
+        print('you were wrong too many times!! goodbye...')
+        break
+    user_attempt = float(input('try again, what is pie?'))
+else:
+    # 2
+    # break did NOT happend
+    print(f'correct, pie is {PIE}')
+
+# the lucky number is 777
+# input number from the user until the user guessed the number
+# count how many times the user tried
+# if the user gave the number 0 break
+# if the user guessed correctly , print "well done! , {tries}..."
+########## no input before
+LUCKY_NUMBER: int = 777
+x: int = 0
+attempts: int = 0
+while x != LUCKY_NUMBER:
+    attempts += 1
+    x = int(input('guess a number'))
+    if x == 0:
+        break
+else:
+#if x == 777:
+    # he guessed 777
+    print(f"good guess. attempts = {attempts}")
+
+########### input before
+LUCKY_NUMBER: int = 777
+x: int = int(input('guess a number'))
+attempts: int = 1
+while x != LUCKY_NUMBER:
+    # 1
+    if x == 0:
+        break
+    attempts += 1
+    x = int(input('wrong. guess again'))
+else:
+    # 2
+    #if x == 777:
+    # he guessed 777
+    print(f"good guess. attempts = {attempts}")
+
+while True:
+    #x
+    #y
+    #z
+    #avg
+    #if 0 <= x <= 10 ....
+        #break
+    pass
 
 # input 3 grades from the user in a for-loop
 # sum all of the numbers
